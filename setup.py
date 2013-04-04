@@ -15,7 +15,8 @@ ext_modules = [
     ]
 
 setup(
-  name = 'Hello world app',
+  name = 'hello',
   cmdclass = {'build_ext': build_ext},
   ext_modules = ext_modules,
+  packages = ['hello']
 )
