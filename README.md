@@ -1,4 +1,13 @@
 xdress_example
 ==============
 
-See if I can make xdress work
+Steps to build the example:
+
+	mkdir src
+	mkdir hello
+	xdress
+	python setup.py build
+
+Steps to test the example:
+
+	TODO
