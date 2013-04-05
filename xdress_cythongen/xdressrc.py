@@ -4,7 +4,7 @@ sourcedir = 'src'      # location of C/C++ source
 
 classes = [
     ('A', 'hoover'),
-    ('B', 'hoover', 'hoover_b'),
     ]
 
-functions = [('do_nothing_ab', 'hoover')]
+functions = []
+#functions = [('do_nothing_ab', 'hoover')]

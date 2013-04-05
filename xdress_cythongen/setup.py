@@ -8,15 +8,18 @@ import numpy as np
 incdirs = [os.path.join(os.getcwd(), 'src'), np.get_include()]
 
 ext_modules = [
-    Extension("xdress_stlwrap.xdress_extra_types", ["xdress_stlwrap/xdress_extra_types.pyx"], 
-              include_dirs=incdirs, language="c++"),
-    Extension("xdress_stlwrap.stlcontainers", ["xdress_stlwrap/stlcontainers.pyx"], 
-              include_dirs=incdirs, language="c++"),
+    #Extension("xdress_cythongen.xdress_extra_types", ["xdress_cythongen/xdress_extra_types.pyx"], 
+    #          include_dirs=incdirs, language="c++"),
+    #Extension("xdress_cythongen.stlcontainers", ["xdress_cythongen/stlcontainers.pyx"], 
+    #          include_dirs=incdirs, language="c++"),
+    Extension("xdress_cythongen.hoover", ["xdress_cythongen/hoover.pyx"],
+    	#'hoover/stlcontainers.pyx', 'hoover/xdress_extra_types.pyx'],
+    	include_dirs=incdirs, language="c++")
     ]
 
-setup(
-  name = 'xdress_stlwrap',
+setup(  
+  name = 'xdress_cythongen',
   cmdclass = {'build_ext': build_ext},
   ext_modules = ext_modules,
-  packages = ['xdress_stlwrap']
+  packages = ['xdress_cythongen']
 )
