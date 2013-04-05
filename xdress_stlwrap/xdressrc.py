@@ -1,5 +1,5 @@
-package = 'hello'     # top-level python package name
-packagedir = 'hello'  # location of the python package
+package = 'xdress_stlwrap'     # top-level python package name
+packagedir = 'xdress_stlwrap'  # location of the python package
 sourcedir = 'src'      # location of C/C++ source
 
 stlcontainers = [

@@ -8,15 +8,15 @@ import numpy as np
 incdirs = [os.path.join(os.getcwd(), 'src'), np.get_include()]
 
 ext_modules = [
-    Extension("hello.xdress_extra_types", ["hello/xdress_extra_types.pyx"], 
+    Extension("xdress_stlwrap.xdress_extra_types", ["xdress_stlwrap/xdress_extra_types.pyx"], 
               include_dirs=incdirs, language="c++"),
-    Extension("hello.stlcontainers", ["hello/stlcontainers.pyx"], 
+    Extension("xdress_stlwrap.stlcontainers", ["xdress_stlwrap/stlcontainers.pyx"], 
               include_dirs=incdirs, language="c++"),
     ]
 
 setup(
-  name = 'hello',
+  name = 'xdress_stlwrap',
   cmdclass = {'build_ext': build_ext},
   ext_modules = ext_modules,
-  packages = ['hello']
+  packages = ['xdress_stlwrap']
 )
