@@ -12,7 +12,7 @@ ext_modules = [
     #          include_dirs=incdirs, language="c++"),
     #Extension("xdress_cythongen.stlcontainers", ["xdress_cythongen/stlcontainers.pyx"], 
     #          include_dirs=incdirs, language="c++"),
-    Extension("xdress_cythongen.hoover", ["xdress_cythongen/hoover.pyx"],
+    Extension("xdress_cythongen.hoover", ['src/hoover.cpp', "xdress_cythongen/hoover.pyx", ],
     	#'hoover/stlcontainers.pyx', 'hoover/xdress_extra_types.pyx'],
     	include_dirs=incdirs, language="c++")
     ]
