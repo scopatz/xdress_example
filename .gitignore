@@ -1,0 +1,11 @@
+.project
+.pydevproject
+.settings
+
+xdress_stlwrap/build
+xdress_stlwrap/src
+xdress_stlwrap/xdress_stlwrap
+
+xdress_cythongen/build
+xdress_cythongen/src/xdress_extra_types.h
+xdress_cythongen/xdress_cythongen
